@@ -1,31 +1,87 @@
+body {
+  font-family: arial;
+  background: #f8f9fb; }
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0; }
+
+fieldset, img {
+  border: 0; }
+
+li {
+  list-style: none; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
 #main-nav {
   background: #032f3e; }
   #main-nav ul {
     width: 100%; }
+    #main-nav ul:after {
+      content: "";
+      display: block;
+      clear: both; }
   #main-nav li {
     float: left;
-    width: 14%; }
+    width: 16.6666666667%; }
   #main-nav a {
     color: #f8f9fb;
     text-decoration: none;
     padding: 16px;
     text-align: center;
     display: block; }
-
-#main-nav a:active {
-  color: #06a4ff; }
-
-#main-nav ul:after {
-  content: "";
-  display: block;
-  clear: both; }
+    #main-nav a:hover {
+      background: #333; }
+    #main-nav a:active {
+      color: #06a4ff; }
 
 Section h1 {
   font-size: 24px;
   color: #032f3e; }
 
+#services {
+  margin-bottom: 60px; }
+  #services li {
+    float: left;
+    width: 33.3333333333%;
+    box-sizing: border-box;
+    text-align: center; }
+  #services img {
+    width: 60%;
+    margin: 20px 20%; }
+  #services a {
+    text-decoration: none;
+    color: #032f3e;
+    font-weight: bold; }
+    #services a:hover {
+      color: #06a4ff; }
+  #services ul:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+#projects li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%; }
+  #projects li:nth-child(4n) {
+    margin-right: 0; }
+  #projects li img {
+    width: 100%; }
+
 .lead-banner {
   width: 100%;
+  overflow: hidden;
   position: relative;
   color: white; }
   .lead-banner .banner-content {
@@ -48,6 +104,7 @@ Section h1 {
 
 .lessons-banner {
   width: 100%;
+  overflow: hidden;
   position: relative;
   color: white; }
   .lessons-banner .banner-content {
